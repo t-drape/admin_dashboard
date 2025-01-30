@@ -86,11 +86,139 @@ body {
 
 .main-content {
   background-color: rgb(131, 131, 131);
+  padding-bottom: 50px;
+  /* padding-right: 35px; */
   grid-column: 2 / 4;
-  grid-row: 2 /  -1;
+  grid-row: 2 / -1;
 
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr;
+  gap: 15px;
+}
+
+.social {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-template-rows: 1fr 1fr;
+  align-items: start;
+  gap: 20px;
+}
+
+.projects {
+  grid-column: 1 / 3;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit minmax(300px 1fr));
+}
+
+/* .title:nth-of-type(2), */
+
+/* .title:nth-of-type(3)  {
+  grid-row: 2 / 3;
+} */
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+.projects .title {
+  margin-left: 20px;
+}
+
+/* .top {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+} */
+
+/* .ann {
+  grid-row: 2 / -1;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+} */
+
+/* .trending {
+  grid-row: 3 / 4;
+} */
+
+/* .trending {
+  grid-row: 2 / -1;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+} */
+
+/* .trending > .title {
+  align-self: end;
+} */
+
+/* .card {
+  width: 250px;
+  height: 200px;
+  border: 2px solid white; */
+/* } */
+
+.vert-card {
+  height: 250px;
+  width: 200PX;
+  border: 1px solid red;
+}
+
+/* .all-cards {
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+} */
+
+.all-cards {
+  grid-row: 2 / -1;
+  grid-column: 1 / -2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  border: 1px solid red;
+}
+
+.all-announcements {
+  grid-row: 1 / 2;
+}
+
+.all-trending {
+  grid-row: 2 / 3;
+}
+
+.trend, .ann {
+  border: 1px solid red;
+}
+
+/* .projects {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr;
+} */
+
+.projects .title {
+  grid-column: 1 / -1;
+}
+
+/* .main-content {
+  background-color: rgb(131, 131, 131);
+  grid-column: 2 / 4;
+  grid-row: 2 /  -1;
+  padding-top: 30px;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+}
+
+ .main-content p {
+  grid-row: 1 / 2;
+  margin-top: 30px;
 }
 
 .projects {
@@ -119,7 +247,7 @@ body {
 
 .social p, .trend {
   border: 1px solid red;
-}
+} */
 
 .sidebar {
   display: grid;
