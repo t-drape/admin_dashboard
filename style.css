@@ -270,16 +270,11 @@ body {
 
 .row-one, .row-two {
   display: grid;
-  border: 1px solid black;
   grid-template-columns: 3fr 2fr;
 }
 
 .row-two {
   grid-row: 2 / 3;
-}
-
-.row-one div, .row-two div {
-  border: 1px solid white;
 }
 
 .clicks {
